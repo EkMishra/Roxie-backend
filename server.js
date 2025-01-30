@@ -64,6 +64,12 @@ app.get("/api/transcripts", async (req, res) => {
 });
 
 // API to fetch daily enquiries
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+  });
+});
+
 app.get("/api/enquiries", async (req, res) => {
   try {
     const enquiries = await Enquiry.aggregate([
