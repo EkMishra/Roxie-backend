@@ -60,7 +60,7 @@ app.get("/api/transcripts", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  console.log(working)
+  console.log("working")
   res.json({
     status: "ok",
   });
